@@ -1,0 +1,62 @@
+{{#if this.coupons}}
+<ul class="coupon-list clearfix">
+{{#each this.coupons}}
+    <li class="coupon-item left {{status}}">
+        <div class="coupon-content">
+            <h3>{{discount}}</h3>
+            <h4>{{title}}</h4>
+        </div>
+        <div class="coupon-info">
+            <p class="coupon-expire">{{begin_date}}&nbsp;-&nbsp;<span>{{end_date}}</span></p>
+        </div>
+        
+        <div class="user-range user-item clearfix">
+                <p class="left">使用范围：</p>
+                <p class="right">{{usage}}</p>
+        </div>
+        {{#if type}}
+        <div class="user-range user-item clearfix">
+                <p class="left">券类型：</p>
+                <p class="right">{{type}}</p>
+        </div>    
+        {{/if}}
+        {{#if code}}
+         <div class="user-range user-item clearfix">
+                <p class="left">券编码：</p>
+                <p class="right">{{code}}</p>
+        </div>         
+        {{/if}}
+    </li>
+    {{/each}}
+</ul>
+
+<div class="page-bottom clearfix">
+    <span class="left">共<i>{{this.totleNum}}</i>个</span>
+    <div class="right">
+        <ul class="page-lists page-list">
+            <li>
+                <a class="pre">上一页</a>
+            </li>
+            {{#each pageArr}}
+            <li class="item {{this.current}}">
+                <a>{{this.page}}</a>
+            </li>
+            {{/each}}
+            <li>
+                <a class="next">下一页</a>
+            </li>
+            <li class="total">
+                共{{this.allPage}}页,到第
+                <input type="text" value="" name="p" class="page-btn" id="page" total-page="{{this.allPage}}">页
+                <button class="btn-page" type="submit">确定</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+{{else}}
+ <p class="no-items">
+    <i class="icon-no-coupon"></i>
+    <span>您暂无优惠券</span>
+</p>
+{{/if}}

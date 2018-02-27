@@ -1,0 +1,52 @@
+﻿{
+    "code": 200,
+    "message": "success",
+    "data": [
+        {
+            "description": "测试三好想~~好想~~好想~~好想~~好想~~好想~~好想~~好想~~好想~~好想~~好想~~好想~~好想~~好想~~好想~~",
+            "end_time": "1505750439",
+            "name": "重新建商品活动（product）",
+            "share_id": "105",
+            "status": "2",
+            "list": [
+                {
+                    "type": 2,
+                    "rule_name": "规则七 测试剩余时间4天",
+                    "number": "3",
+                    "arrive_num": 1,
+                    "coupon": 1
+                },
+                {
+                    "type": 2,
+                    "rule_name": "规则八 测试剩余时间无限期",
+                    "number": "3",
+                    "arrive_num": 2,
+                    "coupon": 1
+                }
+            ]
+        },
+        {
+            "description": "测试个人中心 服务化~~~",
+            "end_time": "1507823940",
+            "name": "测试服务化的分享活动~~",
+            "share_id": "232",
+            "status": "1",
+            "list": [
+                {
+                    "type": 1,
+                    "rule_name": "测试分享123",
+                    "number": "1",
+                    "arrive_num": 1,
+                    "coupon": 1
+                },
+                {
+                    "type": 1,
+                    "rule_name": "两个60欧补偿码",
+                    "number": "1",
+                    "arrive_num": 3,
+                    "coupon": 0
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,315 @@
+/* 找回输入框 */
+.find-form{
+	display: none;
+	&.active{
+		display: block;
+	}
+}
+.icon-error{
+	@include sprite($icon-error);
+}
+.input-group{
+	margin: 0 auto;
+	color: #ccc;
+	position: relative;
+	height: pt(70px);
+	line-height: pt(60px);
+	&.mt{
+		margin-top: pt(52px);
+		padding-top: pt(8px);
+		height: pt(52px);
+	}
+	&.captcha-group{
+		height: pt(80px);
+	}
+	.input-tip{
+		display: inline-block;
+		font-size: pt(14px);
+		letter-spacing: pt(16px);
+		color: #333;
+	}
+	.input-text{
+		width: pt(299px);
+		height: pt(46px);
+		line-height: pt(46px);
+		padding-left: pt(10px);
+		margin-left: pt(0px);
+		border: 1px solid #ccc;
+		box-sizing:border-box;
+		font-size: pt(12px);
+		&:focus{
+			border-color: #6fb33e;
+		}
+	}
+	.icon-check-ok{
+		display: inline-block;
+		position: absolute;
+		top: pt(16px);
+		right: pt(20px);
+		z-index: 11;
+		@include sprite($icon-check-ok);
+	}
+	.error{
+		visibility: hidden;
+		font-size: pt(12px);
+		line-height: pt(14px);
+		color: #f75354;
+		vertical-align: bottom;
+		padding: 0;
+		margin: pt(5px) 0 0 pt(3px);
+		.icon-error{
+			display: inline-block;
+			margin-right: pt(5px);
+			vertical-align: bottom;
+		}
+		&.active{
+			visibility: visible;
+		}
+	}
+	.bind-value{
+		display: inline-block;
+		color: #333;
+		margin-left: pt(3px);
+	}
+	.input-tip{
+		letter-spacing: 0;
+		line-height: pt(46px);
+		&.type-item{
+			letter-spacing: pt(4px);
+		}
+	}
+
+	.captcha-img{
+		width: pt(114px);
+		height: pt(38px);
+		vertical-align: middle;
+		position: absolute;
+		top: pt(12px);
+		right: pt(6px);
+		z-index: 1;
+		cursor: pointer;
+	}
+	.captcha-input{
+		vertical-align: middle;
+		font-size: pt(12px);
+		padding-left: pt(10px);
+		height: pt(46px);
+		width: pt(172px);
+		box-sizing: border-box;
+		border: 1px solid #cccccc;
+		margin-left: pt(5px);
+	}
+	.phone-captcha{
+		width: pt(118px);
+		height: pt(46px);
+		background: #0b94d9;
+		color: #fff;
+		font-size: pt(14px);
+		text-align: center;
+		line-height: pt(46px);
+		display: inline-block;
+		outline: none;
+		border: none;
+		cursor: pointer;
+		&.disabled{
+			background: #ccc;
+			color: #333;
+			font-size: pt(12px);
+			color: #fff;
+		}
+	}
+	.accout-error{
+		display: block;
+	}
+	.item{
+		line-height: pt(12px);
+		margin: pt(0px) 0 0 pt(90px);
+		width: pt(300px);
+		overflow: hidden;
+		.error{
+			display: inline-block;
+			margin-top: pt(2px);
+		}
+		.get-captcha{
+			font-size: pt(12px);
+			color: #999;
+			line-height: pt(12px);
+			display: inline-block;
+		}
+	}
+}
+.accout-error-all{
+	font-size: pt(12px);
+	color: #f75354;
+	vertical-align: bottom;
+	padding: 0;
+	line-height: pt(12px);
+	margin: pt(2px) 0;
+	height: pt(16px);
+	visibility: hidden;
+	&.active{
+		visibility: visible;
+	}
+	&.mt{
+		margin-top: pt(30px);
+	}
+	.icon-error{
+		vertical-align: bottom;
+		display: inline-block;
+		margin-right: pt(2px);
+	}
+}
+.accout-box .accout-input .accout-error{
+	width: pt(420px);
+	margin: 0 auto;
+	text-align: left;
+}
+.accout-error{
+	display: block;
+	visibility: hidden;
+	line-height: pt(13px);
+	overflow: hidden;
+	margin-top: pt(5px);
+	&.is-ok{
+		visibility: visible;
+		color: #6fb33e;
+	}
+	&.active{
+		visibility: visible;
+	}
+	.icon-check-ok{
+		visibility: visible;
+		display: inline-block;
+		position: relative;
+		margin-right: pt(5px);
+		top: 0;
+		left: 0;
+		.tips{
+			display: inline-block;
+		}
+	}
+}
+.accout-btn{
+	width: pt(420px);
+	height: pt(46px);
+	text-align: center;
+	line-height: pt(46px);
+	background: #6fb33e;
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	display: block;
+	cursor: pointer;
+	margin: pt(2px) auto pt(30px);
+	&:hover{
+		background-color: #7bce40;
+	}
+}
+.btn.btn-forgot{
+	width: pt(390px);
+	height: pt(46px);
+	line-height: pt(46px);
+	color: #fff;
+	background: #6fb33e;
+	font-weight: bold;
+	font-size: pt(16px);
+	text-align: center;
+	letter-spacing: pt(1px);
+	cursor: pointer;
+}
+.find-password-tips{
+	margin: pt(50px) 0 0 pt(15px);
+	padding-top: pt(20px);
+	position: relative;
+	width: pt(520px);
+	&:after{
+		content: "";
+		display: block;
+		position: absolute;
+		top: pt(0px);
+		left: pt(-250px);
+		width: pt(870px);
+		height: 0;
+		border-top: 1px solid #ececec;
+	}
+	h3{
+		line-height: pt(20px);
+		font-size: pt(12px);
+		font-weight: bold;
+		color: #333;
+		margin-left: pt(-14px);
+	}
+	li{
+		font-size: pt(12px);
+		font-weight: 100;
+		line-height: pt(24px);
+		color: #999;
+		list-style-type: disc;
+	}
+}
+.setp1{
+	.input-group{
+		margin: 0 auto;
+		color: #ccc;
+		position: relative;
+		height: pt(70px);
+		line-height: pt(46px);
+		.input-tip{
+			_letter-spacing: pt(-3px);
+			letter-spacing: pt(4px);
+		}
+		.input-text{
+			margin-left: pt(1px);
+		}
+		&.mt{
+			margin-top: pt(52px);
+		}
+		.icon-check-ok{
+			top: pt(26px);
+			right: pt(10px);
+		}
+		.error{
+			line-height: pt(14px);
+			margin-left: pt(88px);
+		}
+	}
+	.submit-btn{
+		margin-top: pt(2px);
+	}
+}
+/* 修改成功 */
+.edit-suceess-tips{
+	.result{
+		width: pt(510px);
+		height: pt(166px);
+		margin: pt(60px) auto pt(30px); 
+		text-align: center;
+	}
+	.icon-mb-smeil{
+		display: block;
+		margin: 0  auto;
+		@include sprite($icon-mb-smeil);
+	}
+	.edit-success{
+		font-size: pt(18px);
+		line-height: pt(24px);
+		color: #333;
+		display: block;
+		margin-top: pt(20px);
+	}
+	.tips{
+		margin-top: pt(30px);
+		font-size: pt(14px);
+		line-height: pt(30px);
+		color: #333333;
+		.seconds{
+			color: #f75354;
+		}
+		.tips-time{
+			margin-top: pt(30px);
+			font-size: pt(12px);
+		}
+	}
+}

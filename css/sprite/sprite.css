@@ -1,0 +1,144 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-icon-down {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -146px -103px;
+  width: 16px;
+  height: 9px;
+}
+.icon-icon-email {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -81px -83px;
+  width: 41px;
+  height: 33px;
+}
+.icon-icon-error {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -146px -73px;
+  width: 14px;
+  height: 14px;
+}
+.icon-icon-feature-header1 {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -146px 0px;
+  width: 29px;
+  height: 33px;
+}
+.icon-icon-feature-header2 {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -50px -46px;
+  width: 29px;
+  height: 33px;
+}
+.icon-icon-feature-header3 {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -114px -46px;
+  width: 29px;
+  height: 33px;
+}
+.icon-icon-feature-header4 {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -82px -46px;
+  width: 29px;
+  height: 33px;
+}
+.icon-icon-message-error {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -146px -61px;
+  width: 17px;
+  height: 12px;
+}
+.icon-icon-message {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -146px -49px;
+  width: 17px;
+  height: 12px;
+}
+.icon-icon-msg {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -40px -83px;
+  width: 41px;
+  height: 33px;
+}
+.icon-icon-pass {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -160px -33px;
+  width: 14px;
+  height: 16px;
+}
+.icon-icon-password-pc {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: 0px -83px;
+  width: 40px;
+  height: 36px;
+}
+.icon-icon-password {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -146px -33px;
+  width: 14px;
+  height: 16px;
+}
+.icon-icon-phone-check {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -82px 0px;
+  width: 32px;
+  height: 46px;
+}
+.icon-icon-phone-diabled {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -50px 0px;
+  width: 32px;
+  height: 46px;
+}
+.icon-icon-phone-mb {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -146px -87px;
+  width: 12px;
+  height: 16px;
+}
+.icon-icon-phone-pc {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -114px 0px;
+  width: 32px;
+  height: 46px;
+}
+.icon-icon-phone {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -158px -87px;
+  width: 12px;
+  height: 16px;
+}
+.icon-icon-right {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: -163px -49px;
+  width: 7px;
+  height: 11px;
+}
+.icon-icon-send-message {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: 0px 0px;
+  width: 50px;
+  height: 39px;
+}
+.icon-icon-user {
+  background-image: url(../images/customer/sprite.png?t=1500025536012);
+  background-position: 0px -39px;
+  width: 40px;
+  height: 44px;
+}

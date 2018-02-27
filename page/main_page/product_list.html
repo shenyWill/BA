@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/mainPage/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/mainPage/product_list.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="breadcrumbs">
+            <ul>
+                <li>
+                    <span class="icon-left"></span>
+                    <a href="" class="home-link">主页</a>
+                </li>
+                <li>
+                    <a href="" class="pre-cat">女士内衣</a>
+                    <span class="icon-right">&gt;</span>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="cur-cat">女装</a>
+                </li>
+            </ul>
+        </div>
+        <div class="pl-container clearfix">
+            <div class="col-right">
+                <div class="pl-banner">
+                    <a href="" class="pl-banner-link">
+                        <img class="pl-banner-img" src="../../images/mainPage/pl-list-banner.jpg">
+                    </a>
+                </div>
+                <div class="pl-main">
+                    <div class="pl-header">
+                        <div class="pl-total">
+                            <strong class="pl-category">女士上衣</strong>
+                            <strong class="pl-qty">
+                                <span>共<em>60</em>件</span>
+                            </strong>
+                        </div>
+                        <div class="pl-sort">
+                            <span class="pl-sort-type pl-sort-asc">
+                                <span>销量</span>
+                            <i class="after"></i>
+                            </span>
+                            <span class="pl-sort-type pl-sort-desc selected">
+                                <span>销量</span>
+                            <i class="after"></i>
+                            </span>
+                            <span class="pl-sort-type pl-sort-asc selected">
+                                <span>销量</span>
+                            <i class="after"></i>
+                            </span>
+                            <span class="pl-sort-checkbox selected">
+                                <i class="checkbox"></i>
+                                <span>仅显示有货</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="pl-filter">
+                        <div class="pl-filter-tag">
+                            <span class="tag">
+                                <span>noir</span>
+                            <i class="after"></i>
+                            </span>
+                            <span class="tag">
+                                <span>Brigitte bardot pour la redoute</span>
+                            <i class="after"></i>
+                            </span>
+                            <span class="clean-tag">清除所有选择</span>
+                        </div>
+                        <div class="pl-filter-dropdown" id="static-dropdown">
+                            <div class="dropdown-group clearfix">
+                                <div class="dropdown">
+                                    <div class="dropdown-head">
+                                        <span class="dropdown-type">品牌</span>
+                                        <i class="dropdown-icon"></i>
+                                    </div>
+                                    <div class="dropdown-content ">
+                                        <div class="dropdown-filter">
+                                            <input id="brand-filter" type="text" placeholder="找到一个品牌" />
+                                        </div>
+                                        <div class="dropdown-selection mCustomScrollbar" data-height="150">
+                                            <ul class="dropdown-selection-details dropdown-brand dropdown-hascheckbox">
+                                                <li class="selected" data-productcount="3">
+                                                    <a href="">
+                                                        <span class="checkbox"></span>
+                                                        <span class="dropdown-selection-brand">Celio</span>
+                                                    </a>
+                                                </li>
+                                                <li data-productcount="3">
+                                                     <a href="">
+                                                        <span class="checkbox"></span>
+                                                        <span class="dropdown-selection-brand">Celio</span>
+                                                    </a>
+                                                </li>
+                                                <li data-productcount="3">
+                                                     <a href="">
+                                                        <span class="checkbox"></span>
+                                                        <span class="dropdown-selection-brand">Celio</span>
+                                                    </a>
+                                                </li>
+                                                <li data-productcount="3">
+                                                     <a href="">
+                                                        <span class="checkbox"></span>
+                                                        <span class="dropdown-selection-brand">Celio</span>
+                                                    </a>
+                                                </li>
+                                                <li data-productcount="3">
+                                                     <a href="">
+                                                        <span class="checkbox"></span>
+                                                        <span class="dropdown-selection-brand">Celio</span>
+                                                    </a>
+                                                </li>
+                                                <li data-productcount="3">
+                                                     <a href="">
+                                                        <span class="checkbox"></span>
+                                                        <span class="dropdown-selection-brand">Celio</span>
+                                                    </a>
+                                                </li>
+                                                <li data-productcount="3">
+                                                     <a href="">
+                                                        <span class="checkbox"></span>
+                                                        <span class="dropdown-selection-brand">Celio</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-ctrl dropdown-close">
+                                            <i class="icon-close"></i>
+                                            <span class="btn-close" data-close="关闭" data-apply="应用">关闭</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <div class="dropdown-head">
+                                        <span class="dropdown-type">尺码</span>
+                                        <i class="dropdown-icon"></i>
+                                    </div>
+                                    <div class="dropdown-content ">
+                                        <div class="dropdown-selection mCustomScrollbar" data-height="150">
+                                            <ul class="dropdown-selection-details dropdown-size clearfix">
+                                                <li><a href="">28</a></li>
+                                                <li><a href="">28</a></li>
+                                                <li><a href="">28</a></li>
+                                                <li><a href="">28</a></li>
+                                                <li><a href="">28</a></li>
+                                                <li><a href="">28</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-ctrl dropdown-close">
+                                            <i class="icon-close"></i>
+                                            <span class="btn-close" data-close="关闭" data-apply="应用">关闭</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <div class="dropdown-head">
+                                        <span class="dropdown-type">颜色</span>
+                                        <i class="dropdown-icon"></i>
+                                    </div>
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-selection mCustomScrollbar" data-height="70">
+                                            <ul class="dropdown-selection-details dropdown-color clearfix">
+                                                <li class="selected" data-color="black">
+                                                    <a href="">
+                                                        <i class="circle"  style="background: #000;" ></i>
+                                                    </a>
+                                                </li>
+                                                <li class="selected" data-color="red">
+                                                    <a href="">
+                                                        <i class="circle"  style="background: #F00;" ></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-ctrl dropdown-close">
+                                            <i class="icon-close"></i>
+                                            <span class="btn-close" data-close="关闭" data-apply="应用">关闭</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <div class="dropdown-head">
+                                        <span class="dropdown-type">价格</span>
+                                        <i class="dropdown-icon"></i>
+                                    </div>
+                                    <div class="dropdown-content dropdown-content-center">
+                                        <div class="dropdown-selection mCustomScrollbar" data-height="150">
+                                            <ul class="dropdown-selection-details dropdown-price dropdown-hascheckbox">
+                                                <li class="selected" data-productcount="3">
+                                                    <a href="">
+                                                        <span class="checkbox"></span>
+                                                        <span class="dropdown-selection-brand">0-100</span>
+                                                    </a>
+                                                </li>
+                                                <li data-productcount="3">
+                                                     <a href="">
+                                                        <span class="checkbox"></span>
+                                                        <span class="dropdown-selection-brand">0-100</span>
+                                                    </a>
+                                                </li>
+                                                <li data-productcount="3">
+                                                    <a href="">
+                                                        <span class="checkbox"></span>
+                                                        <span class="dropdown-selection-brand">0-100</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-ctrl dropdown-close">
+                                            <i class="icon-close"></i>
+                                            <span class="btn-close" data-close="关闭" data-apply="应用">关闭</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <div class="dropdown-head">
+                                        <span class="dropdown-type">折扣</span>
+                                        <i class="dropdown-icon"></i>
+                                    </div>
+                                    <div class="dropdown-content dropdown-content-right">
+                                        <div class="dropdown-ctrl dropdown-close">
+                                            <i class="icon-close"></i>
+                                            <span class="btn-close" data-close="关闭" data-apply="应用">关闭</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <div class="dropdown-head">
+                                        <span class="dropdown-type">腰围</span>
+                                        <i class="dropdown-icon"></i>
+                                    </div>
+                                    <div class="dropdown-content dropdown-content-right">
+                                        <div class="dropdown-ctrl dropdown-close">
+                                            <i class="icon-close"></i>
+                                            <span class="btn-close" data-close="关闭" data-apply="应用">关闭</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <div class="dropdown-head">
+                                        <span class="dropdown-type">裤长</span>
+                                        <i class="dropdown-icon"></i>
+                                    </div>
+                                    <div class="dropdown-content dropdown-content-right">
+                                        <div class="dropdown-ctrl dropdown-close">
+                                            <i class="icon-close"></i>
+                                            <span class="btn-close" data-close="关闭" data-apply="应用">关闭</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pl-grid-ctn">
+                        <ul class="pl-grid clearfix">
+                            <li>
+                                <a href="">
+                                    <img class="pl-image" data-src="../../images/mainPage/pl-list.jpg" lazyload src="../../images/mainPage/pl-list.jpg">
+                                </a>
+                                <div class="pl-description">
+                                    <a href="" class="pl-title">2016春夏新款OL通勤白色小西装</a>
+                                    <span class="current-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                    <span class="original-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                </div>
+                                <ul class="pl-color dropdown-color">
+                                    <li class="selected" data-color="black" data-src=""><i class="circle" style="background: #000;"></i></li>
+                                    <li class="selected" data-color="red" data-src=""><i class="circle" style="background: #F00;"></i></li>
+                                </ul>
+                                <span class="pl-discount">-10%</span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="pl-image" data-src="../../images/mainPage/pl-list.jpg" lazyload src="../../images/mainPage/pl-list.jpg">
+                                </a>
+                                <div class="pl-description">
+                                    <a href="" class="pl-title">2016春夏新款OL通勤白色小西装</a>
+                                    <span class="current-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                    <span class="original-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                </div>
+                                <ul class="pl-color dropdown-color">
+                                    <li class="selected"><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                </ul>
+                                <span class="pl-discount">-10%</span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="pl-image" data-src="../../images/mainPage/pl-list.jpg" lazyload src="../../images/mainPage/pl-list.jpg">
+                                </a>
+                                <div class="pl-description">
+                                    <a href="" class="pl-title">2016春夏新款OL通勤白色小西装</a>
+                                    <span class="current-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                    <span class="original-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                </div>
+                                <ul class="pl-color dropdown-color">
+                                    <li class="selected"><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                </ul>
+                                <span class="pl-discount">-10%</span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="pl-image" data-src="../../images/mainPage/pl-list.jpg" lazyload src="../../images/mainPage/pl-list.jpg">
+                                </a>
+                                <div class="pl-description">
+                                    <a href="" class="pl-title">2016春夏新款OL通勤白色小西装</a>
+                                    <span class="current-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                    <span class="original-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                </div>
+                                <ul class="pl-color dropdown-color">
+                                    <li class="selected"><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                </ul>
+                                <span class="pl-discount">-10%</span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="pl-image" data-src="../../images/mainPage/pl-list.jpg" lazyload src="../../images/mainPage/pl-list.jpg">
+                                </a>
+                                <div class="pl-description">
+                                    <a href="" class="pl-title">2016春夏新款OL通勤白色小西装</a>
+                                    <span class="current-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                    <span class="original-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                </div>
+                                <ul class="pl-color dropdown-color">
+                                    <li class="selected"><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                </ul>
+                                <span class="pl-discount">-10%</span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="pl-image" data-src="../../images/mainPage/pl-list.jpg" lazyload src="../../images/mainPage/pl-list.jpg">
+                                </a>
+                                <div class="pl-description">
+                                    <a href="" class="pl-title">2016春夏新款OL通勤白色小西装</a>
+                                    <span class="current-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                    <span class="original-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                </div>
+                                <ul class="pl-color dropdown-color">
+                                    <li class="selected"><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                </ul>
+                                <span class="pl-discount">-10%</span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="pl-image" data-src="../../images/mainPage/pl-list.jpg" lazyload src="../../images/mainPage/pl-list.jpg">
+                                </a>
+                                <div class="pl-description">
+                                    <a href="" class="pl-title">2016春夏新款OL通勤白色小西装</a>
+                                    <span class="current-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                    <span class="original-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                </div>
+                                <ul class="pl-color dropdown-color">
+                                    <li class="selected"><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                </ul>
+                                <span class="pl-discount">-10%</span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="pl-image" data-src="../../images/mainPage/pl-list.jpg" lazyload src="../../images/mainPage/pl-list.jpg">
+                                </a>
+                                <div class="pl-description">
+                                    <a href="" class="pl-title">2016春夏新款OL通勤白色小西装</a>
+                                    <span class="current-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                    <span class="original-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                </div>
+                                <ul class="pl-color dropdown-color">
+                                    <li class="selected"><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                </ul>
+                                <span class="pl-discount">-10%</span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="pl-image" data-src="../../images/mainPage/pl-list.jpg" lazyload src="../../images/mainPage/pl-list.jpg">
+                                </a>
+                                <div class="pl-description">
+                                    <a href="" class="pl-title">2016春夏新款OL通勤白色小西装</a>
+                                    <span class="current-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                    <span class="original-price">
+                                        <em class="price-unit">€</em>
+                                        <span class="price-number">44.95</span>
+                                    </span>
+                                </div>
+                                <ul class="pl-color dropdown-color">
+                                    <li class="selected"><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                </ul>
+                                <span class="pl-discount">-10%</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-left sidebar">
+                <ul class="sidebar-level-1">
+                    <li class="selected">
+                        <a href="">输出第一级名称</a>
+                        <ul class="sidebar-level-2">
+                            <li class="selected">
+                                <a href="">输出第二级目录</a>
+                                <ul class="sidebar-level-3">
+                                    <li>
+                                        <a href="">输出第三级目录</a>
+                                    </li>
+                                    <li class="selected">
+                                        <a href="">输出第三级目录</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">输出第二级目录</a>
+                                <ul class="sidebar-level-3">
+                                    <li>
+                                        <a href="">输出第三级目录</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pl-filter-dropdown fixed-filter" id="fixed-dropdown">
+            <div class="docenter">
+                <strong class="fixed-cat">女士上衣</strong>
+                <div class="dropdown-group clearfix">
+                    <div class="dropdown">
+                        <div class="dropdown-head">
+                            <span class="dropdown-type">品牌</span>
+                            <i class="dropdown-icon"></i>
+                        </div>
+                        <div class="dropdown-content ">
+                            <div class="dropdown-filter">
+                                <input id="brand-filter" type="text" placeholder="找到一个品牌" />
+                            </div>
+                            <div class="dropdown-selection mCustomScrollbar" data-height="150">
+                                <ul class="dropdown-selection-details dropdown-brand dropdown-hascheckbox">
+                                    <li class="selected" data-productcount="3">
+                                        <span class="checkbox"></span>
+                                        <span class="dropdown-selection-brand">Celio</span>
+                                    </li>
+                                    <li data-productcount="3">
+                                        <span class="checkbox"></span>
+                                        <span class="dropdown-selection-brand">Celio</span>
+                                    </li>
+                                    <li data-productcount="3">
+                                        <span class="checkbox"></span>
+                                        <span class="dropdown-selection-brand">Celio</span>
+                                    </li>
+                                    <li data-productcount="3">
+                                        <span class="checkbox"></span>
+                                        <span class="dropdown-selection-brand">Celio</span>
+                                    </li>
+                                    <li data-productcount="3">
+                                        <span class="checkbox"></span>
+                                        <span class="dropdown-selection-brand">Celio</span>
+                                    </li>
+                                    <li data-productcount="3">
+                                        <span class="checkbox"></span>
+                                        <span class="dropdown-selection-brand">Celio</span>
+                                    </li>
+                                    <li data-productcount="3">
+                                        <span class="checkbox"></span>
+                                        <span class="dropdown-selection-brand">Celio</span>
+                                    </li>
+                                    <li data-productcount="3">
+                                        <span class="checkbox"></span>
+                                        <span class="dropdown-selection-brand">Celio</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-ctrl dropdown-close">
+                                <i class="icon-close"></i>
+                                <span class="btn-close" data-close="关闭" data-apply="应用">关闭</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-head">
+                            <span class="dropdown-type">尺码</span>
+                            <i class="dropdown-icon"></i>
+                        </div>
+                        <div class="dropdown-content ">
+                            <div class="dropdown-selection mCustomScrollbar" data-height="150">
+                                <ul class="dropdown-selection-details dropdown-size clearfix">
+                                    <li>28</li>
+                                    <li>30</li>
+                                    <li>32</li>
+                                    <li>33</li>
+                                    <li>34</li>
+                                    <li>36</li>
+                                    <li>38</li>
+                                    <li>40</li>
+                                    <li>42</li>
+                                    <li>44</li>
+                                    <li>46</li>
+                                    <li>48</li>
+                                    <li>50</li>
+                                    <li>52</li>
+                                    <li>54</li>
+                                    <li>S</li>
+                                    <li>M</li>
+                                    <li>L</li>
+                                    <li>XL</li>
+                                    <li>2XL</li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-ctrl dropdown-close">
+                                <i class="icon-close"></i>
+                                <span class="btn-close" data-close="关闭" data-apply="应用">关闭</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-head">
+                            <span class="dropdown-type">颜色</span>
+                            <i class="dropdown-icon"></i>
+                        </div>
+                        <div class="dropdown-content ">
+                            <div class="dropdown-selection mCustomScrollbar" data-height="70">
+                                <ul class="dropdown-selection-details dropdown-color clearfix">
+                                    <li class="selected"><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                    <li><i class="circle"></i></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-ctrl dropdown-close">
+                                <i class="icon-close"></i>
+                                <span class="btn-close" data-close="关闭" data-apply="应用">关闭</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-head">
+                            <span class="dropdown-type">价格</span>
+                            <i class="dropdown-icon"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="dropdown-selection mCustomScrollbar" data-height="150">
+                                <ul class="dropdown-selection-details dropdown-price dropdown-hascheckbox">
+                                    <li class="selected" data-productcount="3">
+                                        <span class="checkbox"></span>
+                                        <span class="dropdown-selection-brand">0-100</span>
+                                    </li>
+                                    <li data-productcount="3">
+                                        <span class="checkbox"></span>
+                                        <span class="dropdown-selection-brand">100-200</span>
+                                    </li>
+                                    <li data-productcount="3">
+                                        <span class="checkbox"></span>
+                                        <span class="dropdown-selection-brand">200-300</span>
+                                    </li>
+                                    <li data-productcount="3">
+                                        <span class="checkbox"></span>
+                                        <span class="dropdown-selection-brand">300-400</span>
+                                    </li>
+                                    <li data-productcount="3">
+                                        <span class="checkbox"></span>
+                                        <span class="dropdown-selection-brand">400-500</span>
+                                    </li>
+                                    <li data-productcount="3">
+                                        <span class="checkbox"></span>
+                                        <span class="dropdown-selection-brand">500-600</span>
+                                    </li>
+                                    <li data-productcount="3">
+                                        <span class="checkbox"></span>
+                                        <span class="dropdown-selection-brand">600-700</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-ctrl dropdown-close">
+                                <i class="icon-close"></i>
+                                <span class="btn-close" data-close="关闭" data-apply="应用">关闭</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-head">
+                            <span class="dropdown-type">折扣</span>
+                            <i class="dropdown-icon"></i>
+                        </div>
+                        <div class="dropdown-content dropdown-content-right">
+                            <div class="dropdown-ctrl dropdown-close">
+                                <i class="icon-close"></i>
+                                <span class="btn-close" data-close="关闭" data-apply="应用">关闭</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-head">
+                            <span class="dropdown-type">腰围</span>
+                            <i class="dropdown-icon"></i>
+                        </div>
+                        <div class="dropdown-content dropdown-content-right">
+                            <div class="dropdown-ctrl dropdown-close">
+                                <i class="icon-close"></i>
+                                <span class="btn-close" data-close="关闭" data-apply="应用">关闭</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-head">
+                            <span class="dropdown-type">裤长</span>
+                            <i class="dropdown-icon"></i>
+                        </div>
+                        <div class="dropdown-content dropdown-content-right">
+                            <div class="dropdown-ctrl dropdown-close">
+                                <i class="icon-close"></i>
+                                <span class="btn-close" data-close="关闭" data-apply="应用">关闭</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../js/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="../../js/mainPage/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="../../js/mainPage/product_list.js"></script>
+</body>
+
+</html>

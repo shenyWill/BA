@@ -1,0 +1,75 @@
+@import "base.scss";
+@import "findInput.scss";
+$securityTipsColor:#ee3333;
+/* 首页绑定弹窗 */
+.securitycellphonemain{
+	display: block;
+	width: pt(363px);
+	margin: pt(10px) auto;
+	.accout-error{
+		margin-top: 0;
+	}
+	.security-tips{
+		font-size: pt(12px);
+		line-height: pt(10px);
+		color: #333333;
+		text-align: center;
+		i{
+			font-style: normal;
+			font-size: pt(12px);
+			color: $securityTipsColor;
+		}
+	}
+	.input-group{
+		height: pt(60px);
+		line-height: pt(46px);
+		.item{
+			width: pt(274px);
+			padding: pt(0px);
+			text-align: left;
+		}
+		.input-tip{
+			line-height: pt(36px);
+			width: pt(86px);
+    		text-align: right;
+		}
+		.captcha-img{
+			width: pt(84px);
+			height: pt(28px);
+			top: pt(10px);
+		}
+		.cellphone-text{
+			letter-spacing: pt(2px);
+		}
+		.phone-captcha{
+			height: pt(36px);
+			line-height: pt(36px);
+			width: pt(88px);
+		}
+		.input-text{
+			width: pt(272px);
+			line-height: pt(36px);
+			height: pt(36px);
+		}
+		&.captcha-group{
+			height: pt(60px);
+			padding-top: pt(3px);
+			.input-text{
+				width: pt(174px);
+			}
+		}
+	}
+	.btn.btn-forgot{
+		width: pt(100px);
+		height: pt(36px);
+		font-size: pt(12px);
+		line-height: pt(36px);
+		font-weight: 100;
+		margin-left: pt(-80px);
+	}
+	.accout-error-all{
+		width: pt(270px);
+		margin:pt(10px) pt(0px) pt(-5px) pt(90px);
+		text-align: left;
+	}
+}

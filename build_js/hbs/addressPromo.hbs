@@ -1,0 +1,77 @@
+ <ul class="address-list clearfix" id="addressList">
+{{#if this.data}}
+ {{#each this.data}}
+    {{#if default_shipping}}
+        <li class="address-item selected default left" data-address-id="{{entity_id}}">
+            <div class="address-name-tel info-item clearfix">
+                <span class="address-name left">{{firstname}}</span>
+                <a class="ctrl-btn ctrl-default right" href="javascript:void(0)">默认地址</a>
+            </div>
+            <div class="address-region info-item clearfix">
+                <span class="address-text">{{region}}</span>
+                <span class="address-text">{{city}}</span>
+                <span class="address-text">{{county}}</span>
+            </div>
+            <div class="address-street info-item clearfix" title="{{street}}">{{street}}</div>
+            <div class="address-tel info-item clearfix">{{telephone}}</div>
+            <div class="address-post info-item clearfix">{{postcode}}</div>
+            <div class="address-email info-item clearfix">{{email}}</div>
+            <div class="address-ctrl clearfix">
+                <a class="ctrl-type ctrl-setdefault" sel-id="addr-checkbox-set-default" href="javascript:void(0)" data-address-id="{{entity_id}}">设为默认</a>
+                <a class="ctrl-type ctrl-edit" href="javascript:void(0)" data-address-id="{{entity_id}}" data-verify="0" sel-id="addr-set-edit">修改</a>
+                <a class="ctrl-type ctrl-delete" href="javascript:void(0)" data-address-id="{{entity_id}}" sel-id="addr-set-delete">删除</a>
+            </div>
+            <div class="address-info">
+                <input class="address-id" value="{{entity_id}}" name="addressId" id="addressId-{{entity_id}}" type="hidden">
+                <input type="hidden" value="{{firstname}}" name="addressName">
+                <input type="hidden" value="{{telephone}}" name="addressTelephone">
+                <input type="hidden" value="{{postcode}}" name="addressPostcode">
+                <input type="hidden" value="{{email}}" name="addressEmail">
+                <input type="hidden" value="" name="isVerified">
+                <input type="hidden" class="exceedOrderTimes" value="N">
+            </div>
+        </li>
+    {{/if}}
+    {{/each}}  
+
+    {{#each this.data}}
+    {{#if default_shipping}}
+    {{else}}
+    <li class="address-item left" data-address-id="{{entity_id}}">
+            <div class="address-name-tel info-item clearfix">
+                <span class="address-name left">{{firstname}}</span>
+                <a class="ctrl-btn ctrl-default right" href="javascript:void(0)">默认地址</a>
+            </div>
+            <div class="address-region info-item clearfix">
+                <span class="address-text">{{region}}</span>
+                <span class="address-text">{{city}}</span>
+                <span class="address-text">{{county}}</span>
+            </div>
+            <div class="address-street info-item clearfix" title="{{street}}">{{street}}</div>
+            <div class="address-tel info-item clearfix">{{telephone}}</div>
+            <div class="address-post info-item clearfix">{{postcode}}</div>
+            <div class="address-email info-item clearfix">{{email}}</div>
+            <div class="address-ctrl clearfix">
+                <a class="ctrl-type ctrl-setdefault" sel-id="addr-checkbox-set-default" href="javascript:void(0)" data-address-id="{{entity_id}}">设为默认</a>
+                <a class="ctrl-type ctrl-edit" href="javascript:void(0)" data-address-id="{{entity_id}}" data-verify="0" sel-id="addr-set-edit">修改</a>
+                <a class="ctrl-type ctrl-delete" href="javascript:void(0)" data-address-id="{{entity_id}}" sel-id="addr-set-delete">删除</a>
+            </div>
+            <div class="address-info">
+                <input class="address-id" value="{{entity_id}}" name="addressId" id="addressId-{{entity_id}}" type="hidden">
+                <input type="hidden" value="{{firstname}}" name="addressName">
+                <input type="hidden" value="{{telephone}}" name="addressTelephone">
+                <input type="hidden" value="{{postcode}}" name="addressPostcode">
+                <input type="hidden" value="{{email}}" name="addressEmail">
+                <input type="hidden" value="" name="isVerified">
+                <input type="hidden" class="exceedOrderTimes" value="N">
+            </div>
+        </li>
+    {{/if}}
+    {{/each}}
+{{else}}
+     <p class="no-items">
+        <i class="icon-no-coupon"></i>
+        <span>您暂无创建收货地址</span>
+    </p>
+{{/if}}
+</ul>

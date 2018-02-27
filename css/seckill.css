@@ -1,0 +1,144 @@
+.breadcrumbs{
+    display: none;
+}
+.seckill{
+    padding: 15px 0;
+}
+.seckill-content-good{
+    padding-top: 242px;
+    margin: 0 auto;
+    width: 1000px;
+}
+.sek-content-time{
+    width: 1000px;
+    margin: 0 auto;
+    color: #fff;
+    clear: both;
+}
+.seckill-content .sek-content-time{
+    text-align: left;
+}
+.seckill-content{
+    width: 1213px;
+    height: 1120px;
+    margin: 0 auto;
+    position: relative;
+    background: url('../images/seckill/sku/title.png') center  no-repeat;
+    background-size: 100%;
+}
+.seckill-content-good .inner-good{
+    overflow: hidden;
+    margin-top: 30px;
+    display: none;
+}
+.seckill-content-good .good-li{
+    width: 324px;
+    height: 400px;
+    background: url("../images/seckill/sku/goods_bg.png") no-repeat  center;
+    float: left;
+    margin-bottom: 8px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    margin-left: 8px;
+}
+.seckill-content-good .good-li:nth-child(2n+1){
+}
+.good-bg{
+}
+.seckill-content-good .ProductImg-s{
+    width: 230px;
+    height: 230px;
+}
+.right-title{
+    width: 260px;
+    text-align: left;
+    margin: 20px 10px 0;
+}
+.good-a{
+    display: block;
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+.good-a:hover{
+    text-decoration: none;
+}
+.good-a:before{
+   content: '';
+   background: url("../images/seckill/sku/seckill_icon.png") no-repeat;
+   width: 62px;
+   height: 53px;
+   position: absolute;
+   top: 4px;
+   left: 3px;
+   z-index: 7;
+   background-size: cover;
+}
+.finish-time .good-a:before,
+.begin .finish.good-a:before,
+.finish .good-a:before{
+    background: url("../images/seckill/sku/seckill_icon_over.png") no-repeat;
+    width: 83px;
+    height: 85px;
+    background-size: 60%;
+} 
+.finish-time .seckill-finish-big{
+    display: block;
+}
+.ProductName-min{
+    font-size: 16px;
+    color: #1c1c1c;
+    height: 48px;
+    line-height: 24px;
+    width: 100%;
+    overflow: hidden;
+}
+.clear{
+    clear: both;
+}
+.PriceContain-s{
+    width: 250px;
+    height: 52px;
+    line-height: 40px;
+    text-align: left;
+    margin-top: 14px;
+}
+.price-text{
+    font-size: 15px;
+    color: #595959;
+    position: relative;
+    display: block;
+    margin-bottom: -32px;
+}
+.price-color{
+    color: #ff1112;
+}
+.price-symbol{
+    font-size: 16px;
+    display: inline-block;
+}
+.price-max{
+    font-size: 41px;
+    font-weight: bold;
+    padding-left: 2px;
+}
+.seckill-finish-big{
+    position: absolute;
+    background: url(../images/seckill/down.png) no-repeat;
+    top: 70px;
+    left: 90px;
+    width: 169px;
+    height: 151px;
+    border: none;
+    background-size: 80%;
+}
+.finish-time .seckill-finish-big,
+.begin .finish .seckill-finish-big{
+    background: url(../images/seckill/finish.png) no-repeat;
+    background-size: 80%;
+}
+.begin .seckill-finish-big{
+    display: none;
+}

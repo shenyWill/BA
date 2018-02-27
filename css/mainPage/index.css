@@ -1,0 +1,172 @@
+.w-1190{
+	width: 1190px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.f-left{
+	float: left;
+}
+.m-right-16{
+margin-right: 16px;
+}
+.m-right-18{
+	margin-right: 18px;
+}
+.m-right-20{
+	margin-right: 20px;
+}
+.m-right-25{
+	margin-right: 25px;
+}
+.m-top-20{
+	margin-top: 20px;
+}
+.m-right-30{
+	margin-right: 30px;
+}
+.m-top-50{
+	margin-top: 50px;
+}
+.index-wrapper{
+	padding:10px 0 50px;
+	background: #f5f5f5;
+}
+.wrapper a,
+.wrapper img{
+	display: block;
+	border: none;
+}
+.banner{
+	position: relative;
+	overflow: hidden;
+}
+.banner img{
+	width: 1190px;
+	height: 400px;
+}
+.banner:hover .slidesjs-navigation{
+	display: block !important;
+}
+
+.half-wrapper{
+	width: 580px;
+	float: left;
+}
+.introduce-video{
+	width: 600px;
+	float: left;
+	margin-top: 20px;
+}
+.full-wrapper{
+	width: 100%;
+	margin-top: 30px;
+	overflow: hidden;
+}
+
+
+.events-link{
+	position: relative;
+	overflow: hidden;
+	float: left;
+	text-decoration: none;
+	cursor: pointer;
+}
+.events-link:hover{
+	text-decoration: none;
+}
+.events-link .events-description{
+	width: 100%;
+	padding:15px 0 10px 0;
+	background: #fff;
+	text-align: center;
+}
+.events-description .events-details{
+	font-size: 26px;
+	color: #000033;
+	text-align:center;
+}
+.events-description .events-more{
+	font-size: 14px;
+	display: block;
+}
+.events-description .events-more:after{
+	content: ">>";
+	margin-left: 4px;
+}
+.events-mask{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+.events-link:hover .events-mask{
+	opacity: .14;
+	filter:alpha(opacity=14);
+}
+.brand-ctn{
+	width: 1200px;
+	margin-top: 50px;
+}
+.brand-ctn .brand-link{
+	width: 190px;
+	float: left;
+	margin-right: 10px;
+}
+
+video{
+	width: 100%;
+	height: 100%;
+}
+.line{
+	display: block;
+}
+.line.normal-line{
+	width: 100%;
+	height: 1px;
+	background: #d9d9d9;
+	overflow: visible;
+}
+.line.bold-line{
+	width: 80px;
+	height: 3px;
+	margin: 0 auto;
+	margin-top: -2px;
+	background: #5f5f5f;
+}
+.introduce-ctn{
+	margin-top: 45px;
+}
+.introduce-header{
+	text-align: center;
+	overflow: hidden;
+}
+.introduce-header h1{
+	font-size: 18px;
+	font-weight: bold;
+	padding-bottom: 15px;
+}
+.introduce-header em{
+	display: inline-block;
+	font-size: 12px;
+	color:#999;
+	padding-top: 8px;
+}
+.introduce-details{
+	float:left;
+	width:550px;
+}
+.introduce-description h2{
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 2px solid #e8e8e8;
+	padding-bottom: 16px;
+}
+.introduce-description p{
+	margin-top: 30px;
+	font-size: 14px;
+
+}

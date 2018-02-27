@@ -1,0 +1,51 @@
+{{#if addressParams}}
+    <li class="address-item selected {{addressParams.default}} left" data-address-id="{{addressParams.id}}">
+        <div class="address-name-tel info-item clearfix">
+            <span class="address-name left">{{addressParams.firstname}}</span>
+            <a class="ctrl-btn ctrl-default right" href="javascript:void(0)">默认地址</a>
+        </div>
+        <div class="address-region info-item clearfix">
+            <span class="address-text">
+                {{addressParams.region}}
+            </span>
+            <span class="address-text">
+                {{addressParams.city}}
+            </span>
+            <span class="address-text">
+                {{addressParams.county}}
+            </span>
+        </div>
+        <div class="address-street info-item clearfix" title="{{addressParams.streetinfo}}">
+            {{{addressParams.streetinfo}}}
+        </div>
+        <div class="address-tel info-item clearfix">
+            {{addressParams.telephone}}
+        </div>
+        <div class="address-post info-item clearfix">
+            {{addressParams.postcode}}
+        </div>
+        <div class="address-email info-item clearfix">
+            {{addressParams.email}}
+        </div>
+        <div class="address-ctrl clearfix">
+            <a class="ctrl-type ctrl-setdefault" href="javascript:void(0)"
+                data-address-id="{{addressParams.id}}">设为默认</a>
+            <a class="ctrl-type ctrl-edit" href="javascript:void(0)"
+                data-address-id="{{addressParams.id}}"
+                data-verify="{{addressParams.isVerified}}">修改</a>
+            <a class="ctrl-type ctrl-delete" href="javascript:void(0)"
+                data-address-id="{{addressParams.id}}">删除</a>
+        </div>
+        <div class="address-info">
+            <input class="address-id" value="{{addressParams.id}}" name="addressId" id="addressId-{{addressParams.id}}" type="radio">
+            <input type="hidden" value="{{addressParams.firstname}}" name="addressName">
+            <input type="hidden" value="{{addressParams.telephone}}" name="addressTelephone">
+            <input type="hidden" value="{{addressParams.postcode}}" name="addressPostcode">
+            <input type="hidden" value="{{addressParams.email}}" name="addressEmail">
+            <input type="hidden" value="{{addressParams.isVerified}}" name="isVerified">
+            <input type="hidden" class="exceedOrderTimes" value="N">
+        </div>
+    </li>
+{{else}}
+    <li class="clearfix no-item">{{addressParams.message}}</li>
+{{/if}}

@@ -1,0 +1,483 @@
+/* <地址列表> */
+.center {
+    width: 1190px;
+    margin: 0 auto;
+}
+.center .left,.payment-method .left{
+    float:left;
+}
+.center .right{
+    float:right;
+}
+.address-list {
+    padding: 10px 0;
+    width: 1160px;
+    overflow: hidden;
+    transition: max-height .2s linear;
+    -webkit-transition: max-height .2s linear;
+    -moz-transition: max-height .2s linear;
+    -ms-transition: max-height .2s linear;
+    -o-transition: max-height .2s linear;
+}
+.address-list.open {
+
+}
+.address-list .address-item,
+.address-list .newaddress-item {
+    position: relative;
+    width: 280px;
+    height: 125px;
+    margin: 5px 2px;
+    background: url(../images/address-normal.png) no-repeat;
+}
+.address-list .address-item.selected,
+.address-list .newaddress-item.selected {
+    background: url(../images/address-selected.png) no-repeat;
+}
+.address-list .newaddress-item {
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+}
+.address-list .newaddress-item:hover {
+    border-color: #6fb33e;
+    color: #6fb33e;
+}
+.address-list .newaddress-item:hover .icon-newaddress {
+    background-position: -37px 0;
+}
+.address-list .newaddress-item .icon-newaddress {
+    display: block;
+    width: 37px;
+    height: 37px;
+    margin: 28px auto 12px;
+    background: url("../images/address-add.png") no-repeat;
+    background-position: 0px 0;
+}
+
+.address-item .address-name-tel {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 26px;
+    font-size: 14px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ececec;
+    .address-name {
+        font-weight: bold;
+    }
+}
+.address-item .address-full {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 24px;
+    font-size: 12px;
+    color: #666; }
+.address-item .address-ctrl {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.address-item .address-ctrl .ctrl-type {
+    color: #6fb33e;
+}
+.address-item .address-ctrl .ctrl-type.ctrl-default {
+    display: none;
+}
+.address-item .address-ctrl .ctrl-type.ctrl-edit {
+    margin-right: 10px;
+}
+.address-item .address-ctrl .ctrl-type.ctrl-delete {
+    margin-right: 25px;
+}
+.address-item .address-info {
+    display: none;
+}
+
+.address-item.default .address-ctrl .ctrl-type.ctrl-default {
+    display: inline;
+}
+.address-item.default .address-ctrl .ctrl-type.ctrl-setdefault {
+    display: none;
+}
+
+.address-more {
+    font-size: 12px;
+    color: #999 !important;
+}
+.address-more:hover {
+    color: #6fb33e !important;
+}
+
+/* </地址列表> */
+/* <新增地址弹窗> */
+.newaddress-ctn {
+    display: none;
+    width: 590px;
+    /* height: 460px; */
+    padding: 40px 55px;
+    background-color: #fff;
+    border: 1px solid #ececec;
+    .close{
+        position: absolute;
+        background: url("../images/icon-login-close.png") no-repeat;
+        top: 10px;
+        right: 10px;
+        width: 12px;
+        height: 12px;
+    }
+}
+.newaddress-ctn .newaddress-title {
+    font-size: 18px;
+    font-weight: normal;
+    padding-bottom: 40px; }
+.newaddress-ctn .newaddress-title .title-tips {
+    font-size: 12px;
+    color: #666; }
+.newaddress-ctn .newaddress-title.edit,
+.newaddress-ctn .newaddress-title.verified {
+    display: none; }
+.newaddress-ctn .address-group {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.newaddress-ctn .address-ctrl {
+    margin-top: 10px;
+    padding-left: 88px; }
+.newaddress-ctn .address-ctrl .icon{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/default-add.png") no-repeat;
+    vertical-align: middle;
+}
+.newaddress-ctn .address-ctrl .icon.icon-checked{
+    width: 18px;
+    height: 18px;
+    background-position:  -18px 0;
+}
+.newaddress-ctn .address-ctrl .icon.icon-unchecked{
+    width: 18px;
+    height: 18px;
+    background-position:  0 0;
+}
+.newaddress-ctn .address-btn {
+    margin-top: 20px;
+    padding-left: 88px; }
+
+.address-group label {
+    display: inline-block;
+    width: 85px; }
+.address-group .input-text,
+.address-group .input-select {
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid #ececec;
+    outline: 0; }
+.address-group .input-text {
+    width: 343px;
+    padding-left: 10px; }
+.address-group .input-select {
+    min-width: 108px; }
+.address-group.error .error-tips {
+    display: block; }
+.address-group .error-tips {
+    display: none;
+    color: #f75354;
+    margin-left: 90px; }
+.address-group .error-tips .icon-error {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin-right: 5px;
+    font-style: normal;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #f75354;
+    border-radius: 50%; }
+
+.address-ctrl .input-checkbox {
+    display: none; }
+.address-ctrl .icon {
+    vertical-align: text-top; }
+.address-ctrl .icon.icon-checked {
+    display: none; }
+.address-ctrl .input-checkbox:checked ~ .icon.icon-checked {
+    display: inline-block; }
+.address-ctrl .input-checkbox:checked ~ .icon.icon-unchecked {
+    display: none; }
+
+.address-btn .btn {
+    height: 36px;
+    line-height: 36px;
+    border-radius: 0; }
+.address-btn .btn-save-address {
+    width: 100px; }
+.address-btn .btn-cancel {
+    width: 60px;
+    background-color: #fff;
+    border-color: #ececec;
+    color: #999; }
+
+/* </新增地址弹窗> */
+.address-list .address-item:nth-child(n+4) {
+    display: none; }
+
+.address-list.open .address-item:nth-child(n+4) {
+    display: block; }
+
+.onestepcheckout-section-none{
+    padding: 10px 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.onestepcheckout-section {
+    border: 1px solid #ececec;
+    padding: 10px 30px;
+    margin-top: 40px;
+}
+.onestepcheckout-section .template{
+    display: none;
+}
+.onestepcheckout-section .section-title {
+    line-height: 36px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #ececec; }
+.onestepcheckout-section .back-to-cart {
+    font-size: 14px;
+    font-weight: normal;
+    color: #999; }
+.onestepcheckout-section 
+{
+    .real-name-tips{
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 12px;
+        color: #ff4c4c;
+        font-weight: 400;
+        .horn{
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            background: url(../images/horn.png) no-repeat;
+            background-size: 100%;
+            vertical-align: middle;
+            margin-right: 5px;
+            margin-top: -2px;
+        }
+    }
+}
+.identity-section .identity-tips {
+    line-height: 54px;
+    color: #666; }
+.identity-section .identity-validate {
+    line-height: 36px;
+    font-size: 16px;
+    padding-bottom: 20px; }
+.identity-section .identity-validate .identity-name {
+    display: inline-block;
+    min-width: 70px; }
+.identity-section .identity-validate .identity-pass {
+    display: none; }
+.identity-section .identity-validate .identity-no {
+    width: 368px;
+    height: 36px;
+    padding: 0 5px;
+    border: 1px solid #ececec;
+    border-radius: 4px;
+    outline: 0;
+    font-size: 12px;
+}
+.identity-section .identity-validate .btn-validate {
+    width: 80px;
+    height: 38px;
+    line-height: 36px;
+    margin-left: 30px; }
+.identity-section .validate-tips {
+    line-height: 24px;
+    font-size: 12px;
+    color: #666;
+    padding-left: 100px; }
+.identity-section .validate-tips .tips {
+    display: none; }
+.identity-section .validate-tips .tips.tips-error {
+    color: #f75354; }
+
+.shipping-method {
+    display: none; }
+
+.payment-methods {
+    margin-top: 25px; }
+.payment-methods .payment-item {
+    margin-right: 50px; }
+.payment-methods .payment-item .payment-radio {
+    display: none; }
+.payment-methods .payment-item .icon-payment {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 16px;
+    margin-right: 16px;
+    width: 20px;
+    height: 20px;
+    background: url("../images/icon-payment.png") no-repeat; }
+.payment-methods .payment-item .icon-payment.payment-checked {
+    display: none;
+    background-position: -20px 0; }
+.payment-methods .payment-item .icon-payment.payment-unchecked {
+    background-position: 0 0; }
+.payment-methods .payment-item .payment-img {
+    display: inline-block;
+    width: 278px;
+    height: 53px;
+    border-radius: 4px;
+    border: 1px solid #ececec;
+    text-align: center; }
+.payment-methods .payment-item .payment-img img {
+    display: inline-block;
+    height: 100%; }
+.payment-methods .payment-item .payment-radio:checked ~ .icon-payment.payment-checked {
+    display: inline-block; }
+.payment-methods .payment-item .payment-radio:checked ~ .icon-payment.payment-unchecked {
+    display: none; }
+.payment-methods .payment-item .payment-radio:checked ~ .payment-img {
+    border-color: #6fb33e; }
+
+/* 支付方式 */
+.pay_hidden{
+    display: none;
+}
+.show_all_payment{
+    cursor: pointer;
+    font-size: 14px;
+    display: none;
+    text-align: center;
+    margin-left: 0;
+    font-weight: 500;
+    width: 180px;
+    border: 1px solid #ececec;
+    color: #1196d9;
+    line-height: 53px;
+    text-align: center;
+}
+.pay_fold .show_all_payment{
+    display: inline-block;
+}
+.pay_hidden.active{
+    display: block;
+}
+/*支付方式折叠*/ 
+.payment-methods .pay_fold .show_all_payment{
+    padding-top:12px;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 20px;
+    display: inline-block;
+}
+.pay_fold .pay_hidden{display: none;}
+.pay_fold .pay_hidden.active{display: block;}
+.payment-tips {
+    padding:0 43px; 
+    text-align:left; 
+    font-size:14px; 
+    color:#999;
+    .payment-tips-protocol{
+        color:#999;
+    }
+    .tips-protocol-text{
+        width: 635px;
+        text-align: center;
+    }
+}
+
+.summary-table {
+    width: 100%;
+    margin-top: 25px; }
+.summary-table .header-row .col-name {
+    text-align: left;
+    text-indent: 30px; }
+.summary-table .header-row .col-price{
+    text-align: center;
+}
+.summary-table .header-row th {
+    font-size: 12px;
+    font-weight: normal;
+    color: #5f5f5f;
+}
+.summary-table .header-row .col-qty,.summary-table .header-row .col-subtotal{
+    text-align: center;
+}
+.summary-table .product-row {
+
+}
+.summary-table .product-row .col-img {
+    display: table-cell;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    border: 1px solid #d8d8d8;
+    float:left;
+    margin-bottom: 10px;
+    img {
+        display: inline;
+        max-width: 90px;
+        max-height: 90px;
+        vertical-align: middle;
+    }
+}
+.summary-table .product-row .col-name {
+    width: 250px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.summary-table .product-row .col-price {
+    width: 280px;
+    color: #ee3333;
+    text-align: center; }
+.summary-table .product-row .col-qty {
+    width: 340px;
+    text-align: center; }
+.summary-table .product-row .col-subtotal {
+    color: #ee3333;
+    text-align: center; }
+
+.onestepcheckout-totals {
+    padding: 10px; }
+.onestepcheckout-totals .total-box{
+    clear: both;
+}
+.onestepcheckout-totals .subtotal-price{
+    float: right;
+}
+.onestepcheckout-totals .subtotal-price .price {
+    color: #ee3333;
+    font-weight: bold;
+}
+.onestepcheckout-totals .total-price {
+    float:left;
+    line-height: 30px;
+    margin-left: 15px;
+}
+.onestepcheckout-totals .total-price .price {
+    color: #666;
+}
+.onestepcheckout-totals .total-grandtotal .price,
+.onestepcheckout-totals .total-grandtotal {
+    line-height: 36px; }
+.onestepcheckout-totals .total-grandtotal .price {
+    font-size: 18px; }
+.onestepcheckout-totals .btn-confirm {
+    float: right;
+    margin-top: 10px;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 16px; }
+
+/*# sourceMappingURL=onestepcheckout.css.map */

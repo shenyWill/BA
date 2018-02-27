@@ -1,0 +1,248 @@
+@import "_sprite";
+@import "base";
+@import "_usercenterbase";
+/* 绑定账号 */
+@import "step";
+@import "findInput";
+$firstnameColor:#1196d9;
+.security-form{
+	&.personal-content{
+		margin-bottom: pt(60px);
+	}
+}
+.personal-content{
+	&.mb{
+		margin-bottom: pt(60px);
+	}
+}
+.security-ctn{
+	margin: pt(30px) pt(60px) pt(20px) pt(20px);
+}
+.security-info-box{
+	display: block;
+	height: pt(60px);
+	line-height: pt(60px);
+	overflow: hidden;
+	.info-name{
+		font-size: pt(16px);
+		line-height: pt(30px);
+		color: #333333;
+		display: inline-block;
+		margin-left: pt(15px);
+		width: pt(150px);
+		vertical-align: middle;
+	}
+	.info-content{
+		font-size: pt(12px);
+		line-height: pt(30px);
+		color: #999;
+		vertical-align: middle;
+		display: inline-block;
+	}
+	.security-info{
+		width: pt(850px);
+		display: inline-block;
+		margin-left: pt(60px);
+		.icon{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.btn,
+		.btn-password,
+		.btn-firstname{
+			font-size: pt(12px);
+			line-height: pt(30px);
+			display: inline-block;
+			width: pt(80px);
+			color: #fff;
+			height: pt(30px);
+			text-align: center;
+			margin-top: pt(15px);
+		}
+		.btn-password,
+		.btn-firstname{
+			color: $firstnameColor;
+		}
+	}
+}
+/* 安全中心首页 */
+.icon-security-user-ok{
+	@include sprite($icon-security-user-ok);
+}
+.icon-security-pwd-ok{
+	@include sprite($icon-security-pwd-ok);
+}
+.icon-security-phone-ok{
+	@include sprite($icon-security-phone-ok);
+}
+.icon-security-phone{
+	@include sprite($icon-security-phone);
+}
+.icon-security-email-ok{
+	@include sprite($icon-security-email-ok);
+}
+.icon-security-email{
+	@include sprite($icon-security-email);
+}
+
+/* 修改密码 */
+.accout-box{
+	width: 100%;
+	overflow: hidden;
+	height: pt(425px);
+	.accout-input{
+		width: pt(990px);
+		box-sizing:border-box;
+		margin: pt(30px) auto;
+		background:#fff; 
+		padding: pt(30px) pt(30px);
+		text-align: center;
+		.register-tips{
+			font-size: pt(14px);
+			margin-left: pt(20px);
+			vertical-align: middle;
+			color: #333333;
+			font-weight: 100;
+		}
+		.accout-title{
+			padding: pt(5px) 0 pt(15px);
+			margin-top: pt(0px);
+			border-bottom: pt(1px) solid #ddd;
+			.right{
+				font-size: pt(12px);
+				color: #999;
+				font-weight: 100;
+				margin-top: pt(5px);
+			}
+			.accout-go{
+				color: #009ee2;
+				margin-left: pt(5px);
+				text-decoration: none;
+			}
+		}
+		.accout-error{
+			font-size: pt(12px);
+			color: #f75354;
+			vertical-align: middle;
+			padding: 0;
+			margin: pt(2px) 0;
+			line-height: pt(18px);
+			&.active{
+				visibility: visible;
+				.icon-error{
+					display: inline-block;
+					margin:pt(-1px) pt(5px) 0 0;
+					vertical-align: middle;
+				}
+			}
+		}
+		.accout-input-item{
+			text-align: left;
+			width: pt(420px);
+			height: pt(70px);
+			line-height: pt(46px);
+			margin: 0 auto;
+			position: relative;
+		}
+		.input-text{
+			width: pt(420px);
+			height: pt(46px);
+			line-height: pt(46px);
+			padding-left: pt(100px);	
+			font-size: pt(12px);
+			box-sizing: border-box;
+		}
+		.icon-check-ok{
+			display: none;
+			vertical-align: middle;
+			position: absolute;
+			top: pt(10px);
+			right: pt(10px);
+			z-index: 1;
+			&.active{
+				display: block;
+			}
+		}
+		.index-text{
+			font-size: pt(12px);
+			color: #333;
+			font-style: normal;
+		    position: absolute;
+		    top: pt(3px);
+			left: pt(14px);
+			&.index-old{
+				letter-spacing: pt(12px);
+			}
+			&.index-confirmation{
+				letter-spacing: pt(4px);
+			}
+		}
+		.icon-checked {
+		    vertical-align: middle;
+		    margin-right: pt(10px);
+		}
+		.icon-check-ok{
+			top: pt(16px);
+		}
+	}
+	.result{
+		width: pt(510px);
+		height: pt(166px);
+		margin: pt(120px) auto 0; 
+		text-align: center;
+		display: none;
+	}
+	.icon-mb-smeil{
+		display: block;
+		margin: 0  auto;
+		@include sprite($icon-mb-smeil);
+	}
+	.edit-success{
+		font-size: pt(18px);
+		line-height: pt(24px);
+		color: #333;
+		display: block;
+		margin-top: pt(20px);
+	}
+}
+/* 绑定手机号修改 */
+.step-box-ctn{
+	width: pt(490px);
+}
+.find-form{
+	width: pt(390px);
+	margin: 0 auto;
+	.input-tip{
+		letter-spacing: 0;
+	}
+}
+.find-password-tips{
+	padding: pt(40px) 0 pt(20px);
+	h3{
+		line-height: pt(30px);
+	}
+}
+.select-type{
+	color: #0b94d9;
+	font-size: pt(12px);
+	text-align: left;
+	margin-top: pt(10px);
+	cursor: pointer;
+	display: inline-block;
+}
+.user.input-group{
+	.input-tip{
+		letter-spacing: pt(3px);
+	}
+	.icon-check-ok{
+		top: pt(24px);
+	}
+}
+/* 修改昵称 */
+.username-edit-form{
+	margin-bottom: pt(30px);
+	.accout-input{
+		margin-top: pt(40px);
+	}
+}
+

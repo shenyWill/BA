@@ -1,0 +1,54 @@
+<form id="popSecurityBindEmail" class="securitycellphonemain">
+    <p class="security-tips">
+        {{{message}}}
+    </p>
+    <p class="accout-error-all accout-error clearfix"></p>
+    {{#if isUnionLogin}}
+        <div class="input-group clearfix">
+            <div class="input-tip">设置密码：</div>
+            <input name="password" type="password" class="checked input-text" sel-id="security-text-password" required placeholder="联合登录用户请设置密码">
+            <i class="icon-check-ok right"></i>
+            <div class="item">
+                <p class="accout-error error"></p>
+            </div>
+        </div>
+        <div class="input-group clearfix">
+            <div class="input-tip">确认密码：</div>
+            <input name="pwdConfirm" type="password" class="checked input-text" sel-id="security-text-confirm" required placeholder="请输入确认密码">
+            <i class="icon-check-ok right"></i>
+            <div class="item">
+                <p class="accout-error error"></p>
+            </div>
+        </div>
+    {{/if}}
+    <div class="input-group clearfix input-require">
+        <div class="input-tip">验证码：</div>
+        <input type="text" class="input-text active captcha" name="captcha" placeholder="请输入验证码" sel-id="security-text-captcha" autocomplete="off" />
+        <img src="" alt="" class="j-captcha captcha-img right">
+        <div class="item">
+            <p class="accout-error error"></p>
+            <div class="right get-captcha">
+                看不清？点击图片更换验证码
+            </div>  
+        </div>
+    </div>
+    <div class="input-group clearfix">
+        <div class="input-tip cellphone-text">手机号：</div>
+        <input name="cellphone" type="text" class="checked input-text" sel-id="security-text-cellphone" required placeholder="请输入常用手机">
+        <i class="icon-check-ok right"></i>
+        <div class="item">
+            <p class="accout-error error"></p>
+        </div>
+    </div>
+    <div class="input-group clearfix phone captcha-group">
+        <label for="captcha">
+            <div class="input-tip left">短信验证码：</div>
+            <input type="text" name="code"  class="input-text captcha-input left" sel-id="security-text-code" autocomplete="off" placeholder="请输入短信验证码">
+            <div class="right phone-captcha">获取验证码</div>
+        </label>
+        <div class="item">
+            <p class="accout-error error"></p>
+        </div>
+    </div>  
+    <button class="btn btn-forgot security-item-type" data-type="bind-cellphone" type="button" sel-id="security-btn-submit">确认</button>                             
+</form>

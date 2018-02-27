@@ -1,0 +1,153 @@
+@function pt($px) {
+    @return $px;
+} 
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.easyDialog_wrapper {
+    width: pt(460px);
+    color: #444;
+    border: pt(3px) solid rgba(0, 0, 0, 0);
+    border-radius: pt(5px);
+    display: none;
+    font-family: "Microsoft yahei", Arial;
+    .easyDialog_content {
+        border-radius: pt(10px);
+        background: #fff;
+        padding-bottom: pt(20px);
+        border: 1px solid #e5e5e5;
+    }
+    .easyDialog_title {
+        height: pt(30px);
+        line-height: pt(30px);
+        overflow: hidden;
+        color: #666;
+        padding: 0 pt(10px);
+        font-size: pt(14px);
+        text-indent: pt(-9999px);
+    }
+    .close_btn {
+        font-family: arial;
+        font-size: pt(18px);
+        _font-size: pt(12px);
+        font-weight: 700;
+        color: #999;
+        text-decoration: none;
+        @include sprite($icon-close);
+        float: right;
+        margin: pt(15px) pt(5px) 0 0;
+        &:hover {
+            color: #333;
+        }
+    }
+    .easyDialog_text {
+        padding: pt(40px) pt(90px) pt(55px);
+        font-size: pt(16px);
+        line-height: 1.625;
+        color: #000;
+        text-align: center;
+    }
+    .easyDialog_footer {
+        padding: 0 pt(10px);
+        text-align: center;
+        *zoom: 1;
+        &:after {
+            content: '';
+            display: block;
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+            clear: both;
+        }
+    }
+    .btn_highlight,.btn_normal {
+        border: 1px solid;
+        border-radius: pt(2px);
+        cursor: pointer;
+        font-family: "Microsoft yahei", Arial;
+        display: inline-block;
+        font-size: pt(12px);
+        width: pt(180px);
+        height: pt(34px);
+        line-height: pt(32px);
+        margin: 0 pt(10px) pt(10px);
+        border: 1px solid;
+        padding: 0 pt(12px);
+        min-width: pt(120px);
+        width: pt(120px);
+        max-width: pt(180px);
+    }
+    .btn_highlight {
+        background: #8dc126;
+        background: -webkit-gradient(linear, center bottom, center top, from(#8dc126), to(#8dc126));
+        background: -moz-linear-gradient(90deg, #8dc126, #8dc126);
+        border-color: #8dc126;
+        color: #fff;
+    }
+    .btn_normal {
+        margin-left: pt(10px);
+        border-color: #8dc126;
+        background: #fff;
+        text-align: center;
+        color: #8dc126;
+        background: -webkit-gradient(linear, center bottom, center top, from(#ececec), to(#f4f4f4));
+        background: -moz-linear-gradient(90deg, #ececec, #f4f4f4);
+    }
+
+}
+
+.rebuy-alert{
+	.easyDialog_content{
+		border-radius: 0;
+        border: none;
+        .easyDialog_title{
+            padding: 0 pt(15px);
+            text-indent:0;
+            color: #fff;
+            background: #6eb33e;
+            font-size: pt(14px);
+            font-weight: bold;
+            line-height: pt(36px);
+            height: pt(36px);
+        }
+        .close_btn{
+            content: "X";
+            color: #fff;
+            background: #6eb33e;
+            font-size: pt(28px);
+            font-weight: 100;
+            margin: 0;
+            &:hover{
+                color: #fff;
+            }
+        }
+        .easyDialog_text{
+            padding: pt(20px) pt(30px);
+        }
+        .btn_highlight{
+            background: #6eb33e;
+        }
+        .btn_normal{
+            border-color: #ccc;
+            color: #333;
+            background: #fff;
+        }
+	}
+}
+.bind-alert{
+    width: pt(440px);
+    box-sizing: border-box;
+    .easyDialog_title{
+        height: pt(40px);
+        line-height: pt(40px);
+    }
+    .easyDialog_text{
+        padding:pt(20px) 0 pt(5px);
+    }
+}
+.warning{
+    line-height: pt(100px);
+}

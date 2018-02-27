@@ -1,0 +1,297 @@
+@import "_sprite.scss";
+@import "base.scss";
+@import "_usercenterbase.scss";
+
+/* 地址管理 */
+.personal-content{
+	margin-bottom: pt(30px);
+}
+.header-right.btn {
+	width: pt(92px);
+	height: pt(30px);
+	text-align: center;
+	line-height: pt(30px);
+	color: #fff;
+	font-size: pt(12px);
+}
+
+/* <地址列表> */
+
+.address-list {
+	padding: pt(15px) pt(20px);
+	width: pt(970px);
+	overflow: hidden;
+	transition: max-height .2s linear;
+	&.open{
+		max-height: pt(270px);
+		overflow: auto;
+	}
+	.address-item,
+	.newaddress-item{
+		position: relative;
+		width: pt(310px);
+		height: pt(228px);
+		padding:pt(0px);
+		box-sizing: border-box;
+		border: 1px solid #ececec;
+		margin:0 pt(20px)  pt(20px) 0;
+		&:nth-child(3n){
+			margin-right: pt(0px);
+		}
+	}
+	.info-item{
+		font-size: pt(12px);
+		line-height: pt(25px);
+		height: pt(25px);
+		overflow: hidden;
+		color: #666666;
+		padding: 0 0 0 pt(20px);
+	}
+	.address-name-tel{
+		background: #f5f5f5;
+		height: pt(40px);
+		line-height: pt(40px);
+		width: 100%;
+		font-size: pt(12px);
+		padding: pt(0px) pt(0px) pt(0px) pt(20px);
+		box-sizing: border-box;
+		.address-name{
+			font-weight: bold;
+			font-size: pt(12px);
+			color: #333333;
+		}
+		
+	}
+	.ctrl-btn {
+		color: #6fb33e;
+		font-size: pt(12px);
+		line-height: pt(23px);
+		margin: pt(7px) pt(20px) 0 0;
+		border: 1px solid #ddd;
+		text-align: center;
+		padding: 0 pt(13px);
+		border-radius: pt(60px);
+		display: none;
+		color: #666666;
+	}
+	.address-region{
+		padding: pt(10px) 0 0 pt(20px);
+	}
+	.default{
+		.ctrl-default{
+			display: block;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		.ctrl-setdefault{
+			display: none;
+		}
+	}
+	.ctrl-default{
+		display: none;
+	}
+	.ctrl-setdefault{
+		display: inline-block;
+	}
+	.address-text{
+		font-size: pt(12px);
+	}
+	.newaddress-item {
+		text-align: center;
+		color: #999;
+		cursor: pointer;
+		&:hover {
+			border-color: #1196d9;
+			color: #1196d9;
+		}
+	}
+	.address-ctrl {
+		border-top:1px solid #ececec;
+		line-height: pt(30px);
+		margin: pt(10px) pt(20px) pt(20px);
+	}
+	.ctrl-type {
+		color: #1196d9;
+		font-size: pt(12px);
+		line-height: pt(30px);
+		margin: 0 pt(20px) 0 0;
+		padding: 0;
+		border: none;
+		line-height: pt(30px);
+		text-align: left;
+		display: inline-block;
+	}
+	.address-id{
+		display: none;
+	}
+}
+/* </地址列表> */
+
+
+/* <新增地址弹窗> */
+
+.newaddress-ctn {
+	display: none;
+	width: pt(760px);
+	padding: pt(15px);
+	background-color: #fff;
+	border: 1px solid #ececec;
+	position: relative;
+	box-sizing: border-box;
+	.close {
+		position: absolute;
+		top: pt(5px);
+		right: pt(20px);
+		font-size: pt(18px);
+		color: #333333;
+	}
+}
+
+.newaddress-ctn .newaddress-title {
+	font-size: pt(14px);
+	font-weight: bold;
+	border-bottom: 1px solid #ececec;
+	width: 100%;
+	display: block;
+	padding-bottom: pt(10px);
+}
+
+.newaddress-ctn .newaddress-title .title-tips {
+	font-size: 12px;
+	color: #666;
+}
+
+.newaddress-ctn .newaddress-title.edit,
+.newaddress-ctn .newaddress-title.verified {
+	display: none;
+}
+
+.newaddress-ctn .address-group {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+
+.address-input-ctn{
+	padding-bottom: pt(30px);
+	.accout-error-all{
+		padding-top: pt(30px);
+	}
+	.address-tips{
+		font-size: pt(12px);
+		line-height: pt(34px);
+		color: #999999;
+		display: block;
+		padding-left: pt(124px);
+	}
+	.address-ctrl{
+		padding-left: pt(124px);
+		label{
+			font-size: pt(12px);
+			line-height: pt(12px);
+			margin-right: pt(3px);
+			color: #333;
+			display: inline-block;
+		}
+	}
+}
+.address-group{
+	label {
+		display: inline-block;
+		width: pt(100px);
+		padding-right: pt(20px);
+		text-align: right;
+		vertical-align: middle;
+		font-size: pt(12px);
+		.icon-stars:after{
+			content: "*";
+			color: #ff3333;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: pt(5px);
+			font-style: normal;
+		}
+	}
+	select,
+	option{
+		height: pt(28px);
+		width: pt(90px);
+		display: inline-block;
+		font-size: pt(12px);
+		line-height: pt(28px);
+		color: #333;
+		outline: none;
+		border: 1px solid #ececec;
+	}
+	.input-text {
+		width: pt(214px);
+		height: pt(28px);
+		line-height: pt(28px);
+		padding-left: pt(10px);
+		font-size: pt(12px);
+		color: #999999;
+		outline: none;
+		border: 1px solid #ececec;
+		&.street{
+			width: pt(360px);
+		}
+	}
+	.error-tips {
+		color: #f75354;
+		margin-left: pt(10px);
+		display: inline-block;
+	}
+	.icon-error:after{
+		font-style: normal;
+		content: "-";
+		display: inline-block;
+		width: pt(14px);
+		height: pt(14px);
+		line-height: pt(14px);
+		margin-right: pt(5px);
+		font-weight: bold;
+		font-size: pt(12px);
+		text-align: center;
+		border-radius: 50%;
+	}
+}
+
+.address-btn{
+	margin:pt(20px) 0 0 pt(124px);
+	.btn {
+		width: pt(90px);
+		height: pt(28px);
+		line-height: pt(28px);
+		border-radius: pt(1px);
+		text-align: center;
+		font-size: pt(12px);
+		border: 0;
+	}
+	.btn-save-address {
+		color: #6fb33e;
+		color: #fff;
+	}
+	.btn-cancel {
+		background-color: #fff;
+		border: 1px solid #ddd;
+		color: #333333;
+		margin-left: pt(20px);
+		&:hover{
+			background-color: #6fb33e;
+			color: #fff;
+		}
+	}
+} 
+.easyDialog_wrapper {
+	.easyDialog_content{
+		.easyDialog_text{
+			padding: 0;
+		}
+	}
+}
+.no-items{
+	&.hidden{
+		display: none;
+	}
+}

@@ -1,0 +1,362 @@
+@import '_sprite.scss';
+@import 'easydialog.scss';
+$theme: #0b94d9;
+$borderColor: #e1e1e1;
+$blockColor:#8bb816;
+$priceColor: #eb4040;
+$defalutView: 990px;
+$errorTipsColor:#f75354;
+$inputFocusColor:#6fb33e;
+@function pt($px) {
+    @return $px;
+} 
+body{
+	padding: 0;
+	margin: 0;
+	font-family: "Microsoft yahei", Arial;
+}           
+*{
+	padding: 0;
+}
+.btn{
+	border: none;
+	outline: none;
+	border-radius: 0;
+}
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+li{
+	list-style:none;
+}
+[class^="icon-"]{
+	display:inline-block
+}
+.icon-check-ok{
+	visibility: hidden;
+	&.active{
+		visibility: visible;
+	}
+	/* 成功发送验证码 */
+	&.active-success{
+		visibility: visible;
+		margin-right: pt(2px);
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: pt(-1px);
+	}
+}
+input[type=text]:focus, input[type=password]:focus {
+    border: 1px solid $inputFocusColor;
+    outline: none;
+}
+input:-webkit-autofill {
+	-webkit-box-shadow : 0 0 0px 1000px white inset;
+	border : 1px solid #CCC ;
+}
+#back-top{
+	display: none;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clearfix{
+	clear: both;
+}
+.service-head{
+	width: pt(990px);
+	height: pt(100px);
+	line-height: pt(90px);
+	margin: 0 auto;
+	.logo{
+		width: pt(240px);
+		height: pt(60px);
+		img{
+			vertical-align: middle;
+			width: 100%;
+		}
+	}
+}
+.feature{
+	width: pt(580px);
+	vertical-align: middle;
+	&-item{
+		display: inline-block;
+		padding: pt(5px) pt(10px);
+		font-size: 0;
+		.item-title,
+		.icon{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.item-title{
+			font-size: pt(12px);
+			line-height: pt(16px);
+			color: #5fb236;
+			padding-left: pt(5px);
+		}
+		&:first-child{
+			padding-left: pt(0px);
+		}
+		&:last-child{
+			padding-right: pt(0px);
+		}
+	}
+}
+
+
+.icon-feature-header1{
+  @include sprite($icon-feature-header1);
+}
+.icon-feature-header2{
+  @include sprite($icon-feature-header2);
+}
+.icon-feature-header3{
+  @include sprite($icon-feature-header3);
+}
+.icon-feature-header4{
+  @include sprite($icon-feature-header4);
+}
+.icon-accout-right{
+	@include sprite($icon-accout-right);
+}
+.icon-error{
+	@include sprite($icon-error);
+	&.is-ok{
+	@include sprite($icon-check-ok);
+	}
+}
+.is-ok{
+	.icon-error{
+		@include sprite($icon-check-ok);
+	}
+	color: $inputFocusColor;
+}
+.icon-mb-user{
+	@include sprite($icon-mb-user);
+	&.checked{
+	@include sprite($icon-user-ok);
+	}
+}
+.icon-pass{
+	@include sprite($icon-pass);
+	&.checked{
+	@include sprite($icon-password);
+	}
+}
+.icon-mb-img-hide{
+	@include sprite($icon-mb-img-hide);
+	&.checked{
+	@include sprite($icon-mb-img);
+	}
+}
+.icon-check-ok{
+	@include sprite($icon-check-ok);
+}
+.icon-qq{
+	@include sprite($icon-qq);
+}
+.icon-sina{
+	@include sprite($icon-sina);
+}
+.icon-alipay{
+	@include sprite($icon-alipay);
+}
+.icon-unionpay{
+	@include sprite($icon-unionpay);
+}
+.wrapper{
+	min-width: pt(1190px);
+}
+.service-footer{
+	background: #fff;
+	text-align: center;
+	margin: 0 auto;
+	font-size: pt(12px);
+	color:#999;
+	line-height: pt(10px);
+	padding: pt(30px) 0; 
+}
+.clause-checkbox{
+	display: none;
+}
+.icon-checked {
+	@include sprite($icon-check);
+	vertical-align: middle;
+}
+
+.clause-checkbox:checked~.icon-checked {
+	@include sprite($icon-checked);
+}
+.select-title{
+	font-size: pt(12px);
+	line-height: pt(40px);
+	color: #999999;
+	display: inline-block;
+	margin-right: pt(5px);
+	margin-left: pt(15px);
+}
+.accout-error{
+	font-size: pt(12px);
+	color: $errorTipsColor;
+	vertical-align: middle;
+	padding: 0;
+	margin: pt(2px) auto;
+	visibility: hidden;
+	&.active{
+		visibility: visible;
+		.icon-error{
+			display: inline-block;
+			margin:pt(-1px) pt(5px) 0 0;
+			vertical-align: middle;
+		}
+	}
+	&.is-ok{
+		visibility: visible;
+		color: #6fb33e;
+	}
+}
+.select-option{
+	width: pt(120px);
+	height: pt(32px);
+	line-height: pt(32px);
+	background: transparent;
+	border: 1px solid #ccc;
+	outline: none;
+	padding-left: pt(0px);
+	margin: pt(3px) pt(0px) pt(0px);
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+	cursor: pointer;
+	&:nth-child(2){
+		margin-right: pt(20px);
+	}
+	.selected-item{
+		padding-left: pt(20px);
+		display: block;
+		color:#6d6d6d;
+		cursor: pointer;
+	}
+	.icon-down{
+		@include sprite($icon-down);
+		position: absolute;
+		top: pt(10px);
+		right: pt(10px);
+		z-index: 11;
+	}
+}
+.all-item{
+	position: absolute;
+	top: pt(30px);
+	left:pt(-1px);
+	z-index: 11;
+	display: none;
+	box-sizing: border-box;
+	width: pt(120px);
+	border: 1px solid #ddd;
+	&.active{
+		display: block;
+	}
+	li{
+		margin:0;
+		height: pt(32px);
+		line-height: pt(32px);
+		padding-left: pt(20px);
+		display: block;
+		cursor: pointer;
+		color:#6d6d6d;
+		-webkit-appearance:none; 
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);   
+		background-color: #fff;
+		&.selected,
+		&:hover{
+			background:#ececec;
+		}
+	}
+}
+/* 轮播图 */
+.swiper-slide{
+	flex-shrink: 0;
+}
+
+/* 加载中 */
+.loading-img{
+	.load{
+		font-style: normal;
+		background: url('../../images/customer/ajax-loading.gif') no-repeat center;
+		z-index: 1;
+		display:inline-block;
+		width: pt(16px);
+		height: pt(16px);
+		margin: pt(0px) pt(2px);
+		vertical-align: middle;
+		background-size: cover;
+	}
+}
+/*忘记密码页面独有样式*/
+.o-customer-security-choosepwdauthpage{
+	.select-option{
+		width: 75%;
+
+	}
+	.selected-item::before{
+		content: "";
+		display: block;
+		background-image: url(../../images/icon-arrow.png);
+		height: 8px;
+		width: 15px;
+		position: absolute;
+		right: 12px;
+		top: 16px;
+	}
+	.all-item{
+		width: 100%;
+	}
+}
+/*送券弹框*/
+.coupon-popup{
+	position: relative;
+	width: pt(500px);
+	height: pt(526px);
+	transform: translateY(-30%);
+	background: url(../../images/customer/pc-coupon.png);
+	text-align: center;
+	.coupon-popup-button{
+		position: absolute;
+		bottom: 0;
+		width: pt(161px);
+		height: pt(55px);
+		margin-left: pt(170px);
+		cursor: pointer;
+	}
+	.coupon-popup-text{
+		position: relative;
+		top: pt(300px);
+		width: pt(330px);
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.popup-text-title{
+		font-size: pt(20px);
+		line-height: pt(46px);
+		color: #333333;
+		margin: pt(5px) 0;
+		strong{
+			font-size: pt(60px);
+			color: #ff4c4c;
+		}
+	}
+	.popup-text-explain{
+		font-size: pt(14px);
+		line-height: pt(20px);
+		color: #666666;
+		margin: 0;
+	}
+}

@@ -1,0 +1,86 @@
+@import 'base.scss';
+.page-bottom {
+	margin-top: pt(20px);
+	height: pt(50px);
+	overflow: hidden;
+	padding: 0 0 0 pt(20px);
+	.left {
+		font-size: pt(12px);
+		line-height: pt(30px);
+		color: #999;
+		display: inline-block;
+		margin-top: pt(0px);
+		i {
+			color: #ee3333;
+			font-style: normal;
+			display: inline-block;
+			padding: pt(0px) pt(2px);
+		}
+	}
+	.page-list{
+		width: pt(560px);
+		display: inline-block;
+		text-align: right;
+		li{
+			display: inline-block;
+			border: 1px solid #ececec;
+			text-align: center;
+			width: pt(50px);
+			height: pt(28px);
+			line-height: pt(28px);
+			margin: pt(0px) pt(2px);
+			box-sizing: border-box;
+			font-size: pt(12px);
+			vertical-align: middle;
+		}
+		a{
+			color: #666666;
+			font-size: pt(12px);
+			width: 100%;
+			display: block;
+		}
+		.current{
+			color: #fff;
+			background: #6fb33e;
+			a{
+				color: #fff;
+			}
+		}
+		.item{
+			width: pt(30px);
+			max-width: pt(50px);
+			height: pt(30px);
+		}
+		.total{
+			border: none;
+			width: auto;
+			margin:0 pt(20px);
+		}
+		.page-btn{
+			width: pt(40px);
+			height: pt(30px);
+			border: 1px solid #ececec;
+			font-size: pt(12px);
+			text-align: center;
+			margin: pt(0px) pt(5px);
+		}
+		.btn-page{
+			border: 1px solid #ececec;
+			display: inline-block;
+			font-size: pt(12px);
+			height: pt(30px);
+			padding: 0 pt(10px);
+			line-height: pt(30px);
+			margin-left: pt(20px);
+			cursor: pointer;
+			background: none;
+		}
+		form{
+			display: inline;
+		}
+	}
+}
+.HeaderMiddle .search_box input:focus{
+	outline: none;
+	border: none;
+}

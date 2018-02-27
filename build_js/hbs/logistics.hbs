@@ -1,0 +1,36 @@
+<div class="logistics-message">
+    {{#if title}}
+    <h1 class="path-title">{{title}}</h1>
+    {{/if}}
+    <div class="path-content">
+        <ul class="path-ul">
+            {{#if result.data}}
+                {{#each result.data}}
+                    <li class="clearfix path-item">
+                        <div class="path-content-left left">
+                            <div class="dot"></div>
+                            <div class="under-line"></div>
+                        </div>
+                        <div class="path-content-right right">
+                            <div class="predict">
+                                {{#if acceptAddress}}
+                                    <span class="address">{{acceptAddress}}</span>
+                                {{/if}}
+                                <span class="remark">{{{remark}}}</span>
+                            </div>
+                            <div class="predict-time">{{acceptTime}}</div>
+                        </div>
+                    </li>
+                {{/each}}
+                {{#if result.url}}
+                    <li class="clearfix btn more-detail">
+                        <a href="{{result.url}}" target="_blank">查看全部</a>
+                    </li>
+                {{/if}}
+            {{else}}
+                <li class="clearfix path-item">暂无物流信息更新!</li>
+            {{/if}}
+        </ul>
+    </div>
+</div>
+

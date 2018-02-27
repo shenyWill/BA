@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/*分享*/
+#share-uni {
+  display: none; }
+
+.show-rules {
+  position: absolute;
+  top: 23px;
+  left: 125px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 45px; }
+
+.pd-payment .title.share-title {
+  float: initial;
+  padding-right: 7px;
+  background: url(../images/arrow_down.png) no-repeat right center; }
+
+.share-ul {
+  display: none;
+  padding: 0 5px 15px; }
+
+.share-li {
+  padding-top: 10px; }
+
+.show-rules:hover {
+  background: url(../images/share_03.jpg) no-repeat center center;
+  width: 405px;
+  height: 220px; }
+
+.show-rules:hover .share-ul {
+  display: block; }
+
+.show-rules:hover .title.share-title {
+  background: url(../images/arrow_up.png) no-repeat right center; }
+
+.share-img {
+  float: left;
+  width: 160px;
+  height: 160px;
+  padding-right: 10px; }
+
+.share-title {
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.share-right {
+  float: left;
+  text-align: left;
+  font-size: 0; }
+
+.share-price {
+  font-size: 16px;
+  color: #ee3333;
+  margin: 5px 0 15px;
+  font-weight: bold; }
+
+.share-prompt {
+  margin-bottom: 10px; }
+
+.share-prompt, .share-url {
+  font-size: 12px;
+  color: #999999; }
+
+.share-url {
+  margin-top: 15px;
+  line-height: 2; }
+
+.share-copy {
+  font-size: 14px;
+  color: #009ee2;
+  padding: 2px 10px;
+  border: 1px solid #009ee2;
+  margin-left: 15px;
+  text-decoration: none; }
+
+.share-logo {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px; }
+
+.weixin {
+  background: url(../images/share_log.png); }
+
+.sina {
+  background: url(../images/share_log.png) -40px 0; }
+
+.qq {
+  background: url(../images/share_log.png) -80px 0; }
+
+.douban {
+  background: url(../images/share_log.png) -120px 0; }
+
+.erweima-show {
+  display: none;
+  position: absolute;
+  top: 160px;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  background: #fff; }
+
+.erweima-show p {
+  margin: 5px 0; }
+
+.weinxin-title {
+  text-align: left;
+  font-size: 12px;
+  color: #999999; }
+
+.weinxin-title.top {
+  font-size: 13px;
+  color: #333333; }
+
+#code {
+  width: 150px;
+  height: 150px;
+  padding: 10px 20px; }
+
+.weixin:hover .erweima-show {
+  display: block; }
+
+#select-url {
+  width: 300px;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+  text-decoration: underline; }

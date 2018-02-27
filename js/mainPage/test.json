@@ -1,0 +1,40 @@
+{
+    "ret": 0,
+    "colors": [
+        {
+            "id": "150580",
+            "color": "red",
+            "imgUrl": "http://www.wenphoto.com/uploads/article/20141117/8b98bc711ffe3071b63ca98f8d5fd596.jpg"
+        },
+        {
+            "id": "150581",
+            "color": "blue",
+            "imgUrl": "http://imgst-dl.meilishuo.net/pic/_o/84/a4/a30be77c4ca62cd87156da202faf_1440_900.jpg"
+        },
+        {
+            "id": "150582",
+            "color": "grey",
+            "imgUrl": "http://www.microfotos.com/pic/0/90/9023/902372preview4.jpg"
+        },
+        {
+            "id": "150583",
+            "color": "other",
+            "imgUrl": "http://s2.nuomi.bdimg.com/upload/deal/2014/1/V_L/623682-1391756281052.jpg"
+        },
+        {
+            "id": "150580",
+            "color": "red",
+            "imgUrl": "http://www.wenphoto.com/uploads/article/20141117/8b98bc711ffe3071b63ca98f8d5fd596.jpg"
+        },
+        {
+            "id": "150581",
+            "color": "blue",
+            "imgUrl": "http://imgst-dl.meilishuo.net/pic/_o/84/a4/a30be77c4ca62cd87156da202faf_1440_900.jpg"
+        },
+        {
+            "id": "150582",
+            "color": "grey",
+            "imgUrl": "http://www.microfotos.com/pic/0/90/9023/902372preview4.jpg"
+        }
+    ]
+}
